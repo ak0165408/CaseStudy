@@ -89,6 +89,7 @@
 						<p>Getting a degree in C.I.S. is almost a requirement these days to get any type of I.T. related job. Whether it's getting your associates, bachlors, or a graduate level degree, you have so many options! Below are just a few of the local options you do have and a list of others for advanced degrees. Don't wait! Get registered today and get on the fast track to the dream job you have always wanted!</p>
 						
 						<p><a class="btn btn-lg btn-primary" href="https://www.google.com/search?q=which+degree+is+right+for+me&ie=utf-8&oe=utf-8" role="button" onclick = "webClick()">Which degree is for me?</a></p>
+						
 					</div>
 				</div>
 			</div>
@@ -124,6 +125,7 @@
           <p><a class="btn btn-default" href="https://www.google.com/search?q=doctorate+degrees+in+cis&ie=utf-8&oe=utf-8" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
      </div><!-- /.row -->
+	 <p>Today is <span id = "demo"></span>. Have you registered for your future yet?</p>
 
 
 	<!-- FOOTER -->
@@ -149,6 +151,10 @@
 		function webClick() {
 		alert("Thank you for visiting our site! Press OK to travel to Google to look at which degrees are right for you.")
 		}
+	</script>
+	
+	<script>
+		document.getElementById("demo").innerHTML = Date();
 	</script>
   </body>
 </html>
