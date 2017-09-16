@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>C.I.S. - Computer Information Systems</title>
+
+<!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  <script src = "modernizr.custom.05819.js"></script>
+  </head>
+  <!-- Nav Bar -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">C.I.S.</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="degrees.html">CIS Degrees</a></li>
+                <li class="active"><a href="events.html">Local CIS Events</a></li>
+        <li><a href="tools.html">Study Tools</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+<!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <img class="img" src="cis.png" alt="" width="150" height="150">
+            <h1>Study Tools</h1>
+            <p>You can't expect to learn everything overnight. Here are a few links to help you get ahead of the curve. Remember that tutorial sites are there to help you code, not code for you.</p>
+            <p>Not sure where to begin? Try the link below.</p>
+            <form>
+              <input class="btn btn-lg btn-primary" value="Get Started" role="button" onClick="rand_link()">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </div><!-- /.carousel -->
+
+    <!-- Featurettes below carousel -->
+    
+    <div class="container marketing">
+  
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-square" src="stackimg.jpg" alt="StackOverflow" width="140" height="140">
+          <h2>StackOverflow</h2>
+          <p>Vast community of skilled developers.</p>
+          <p><a class="btn btn-default" href="https://stackoverflow.com" role="button">Go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-square" src="tpointimg.png" alt="TutorialsPoint" width="140" height="140">
+          <h2>TutorialsPoint</h2>
+          <p>Free online tutorials and courses.</p>
+          <p><a class="btn btn-default" href="https://www.tutorialspoint.com/tutorialslibrary.htm" role="button">Go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-square" src="codeimg.png" alt="CODE.ORG" width="140" height="140">
+          <h2>Code.org</h2>
+          <p>The absolute basics taught in the simplest of ways.</p>
+          <p><a class="btn btn-default" href="https://code.org" role="button">Go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-square" src="cfimg.jpeg" alt="CodingForums" width="140" height="140">
+          <h2>CodingForums</h2>
+          <p>Web coding and development forums. Get help on JavaScript, PHP, HTML, CSS, XML, and more.</p>
+          <p><a class="btn btn-default" href="https://codingforums.com" role="button">Go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-square" src="cademyimg.jpg" alt="Codecademy" width="140" height="140">
+          <h2>Codecademy</h2>
+          <p>An online interactive platform that offers free coding classes in 12 different programming languages.</p>
+          <p><a class="btn btn-default" href="https://codecademy.com" role="button">Go &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        
+        
+     </div><!-- /.row -->
+
+    
+
+    <!-- Footer -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017 Jarret Stewart &middot;</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="ie10-viewport-bug-workaround.js"></script>
+    <script type='text/javascript'>
+      function rand_link(){
+        var rand=Math.round(Math.random()*4)
+        var link1="http://www.codingforums.com"
+        var link2="https://www.tutorialspoint.com/tutorialslibrary.htm"
+        var link3="http://www.stackoverflow.com"
+        var link4="http://www.codecademy.com"
+        var link5="http://www.code.org"
+        if (rand==0)
+            window.location=link1
+        else if (rand==1)
+            window.location=link2
+        else if (rand==2)
+            window.location=link3
+        else if (rand==3)
+            window.location=link4
+        else if (rand==4)
+            window.location=link5
+      }
+    </script>
+  </body>
+</html>
