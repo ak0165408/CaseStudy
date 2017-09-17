@@ -74,22 +74,22 @@
     <div class="container marketing">
       <div class="row">
         <div class="col-lg-4">
-          <img class="img" src="tio.png" alt="" width="150" height="150">
-          <h2>Tech IT Out Expo</h2>
+		  <img class = "img" alt = "Tech It Out" width="150" height="150">
+          <h2><span id = "item1"></span></h2>
 		  <h3>October 26, 2017</h3>
           <p>Tech IT Out would be a great event for anyone in the Information Technology field! There will be tons of companies present from all of the nation that would love to talk to you.</p>
           <p><a class="btn btn-default" href="https://techitoutexpo.com/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img" src="thb.png" alt="" width="150" height="150">
-          <h2>Tiger Hacks</h2>
+          <img class="img" alt="Tiger Hacks" width="150" height="150">
+          <h2><span id = "item2"></span></h2>
 		  <h3>October 13-15, 2017</h3>
           <p>Tiger Hacks is a 36 hour hackathon in Columbia, MO. Hundreds of students will gather together and rethink journalism and media. This would be a great opportunity to meet companies and new friends!</p>
           <p><a class="btn btn-default" href="http://tiger-hacks.com/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img" src="twl.png" alt="" width="150" height="150">
-          <h2>Techweek Kansas City</h2>
+          <img class="img" alt="Techweek KC" width="150" height="150">
+          <h2><span id = "item3"></span></h2>
 		  <h3>September 11-15, 2017</h3>
           <p>Techweek in Kansas City will be a great way to gain a lot of knowledge about current tech and coorperate tech. This even has upwards of 35 speakers from major companies!</p>
           <p><a class="btn btn-default" href="http://techweek.com/kansas-city/" role="button">View details &raquo;</a></p>
@@ -116,5 +116,26 @@
     <script src="holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
+	<script>
+		// Array to hold images
+		var images = ["tio.png", "thb.png", "twl.png"]
+		var filename1, filename2, filename3;
+		var currentFig1, currentFig2, currentFig3;
+		filename1 = images[0];
+		currentFig1 = document.getElementsByTagName("img")[1];
+		currentFig1.src = filename1;
+		filename2 = images[1];
+		currentFig2 = document.getElementsByTagName("img")[2];
+		currentFig2.src = filename2;
+		filename3 = images[2];
+		currentFig3 = document.getElementsByTagName("img")[3];
+		currentFig3.src = filename3;		
+
+		// Arrry to hold Item Names
+		var names = ["Tech It Out Expo", "Tiger Hacks", "Techweek Kansas City"]
+		document.getElementById("item1").innerHTML = names[0];
+		document.getElementById("item2").innerHTML = names[1];
+		document.getElementById("item3").innerHTML = names[2];
+	</script>
   </body>
 </html>
