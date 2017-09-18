@@ -76,22 +76,22 @@
         <div class="col-lg-4">
 		  <img class = "img" alt = "Tech It Out" width="150" height="150">
           <h2><span id = "item1"></span></h2>
-		  <h3>October 26, 2017</h3>
-          <p>Tech IT Out would be a great event for anyone in the Information Technology field! There will be tons of companies present from all of the nation that would love to talk to you.</p>
+		  <h3 id = "date1" ></h3>
+          <p id = "desc1" ></p>
           <p><a class="btn btn-default" href="https://techitoutexpo.com/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" alt="Tiger Hacks" width="150" height="150">
           <h2><span id = "item2"></span></h2>
-		  <h3>October 13-15, 2017</h3>
-          <p>Tiger Hacks is a 36 hour hackathon in Columbia, MO. Hundreds of students will gather together and rethink journalism and media. This would be a great opportunity to meet companies and new friends!</p>
+		  <h3 id = "date2" ></h3>
+          <p id = "desc2" ></p>
           <p><a class="btn btn-default" href="http://tiger-hacks.com/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img" alt="Techweek KC" width="150" height="150">
           <h2><span id = "item3"></span></h2>
-		  <h3>September 11-15, 2017</h3>
-          <p>Techweek in Kansas City will be a great way to gain a lot of knowledge about current tech and coorperate tech. This even has upwards of 35 speakers from major companies!</p>
+		  <h3 id = "date3" ></h3>
+          <p id = "desc3" ></p>
           <p><a class="btn btn-default" href="http://techweek.com/kansas-city/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
      </div><!-- /.row -->
@@ -136,6 +136,20 @@
 		document.getElementById("item1").innerHTML = names[0];
 		document.getElementById("item2").innerHTML = names[1];
 		document.getElementById("item3").innerHTML = names[2];
+		
+		// Array to hold event dates
+		var dates = ["October 26, 2017", "October 13-15, 2017", "September 11-15, 2017"]
+		document.getElementById("date1").innerHTML = dates[0];
+		document.getElementById("date2").innerHTML = dates[1];
+		document.getElementById("date3").innerHTML = dates[2];
+		
+		// Array to hold description 
+		var desc = ["Tech IT Out would be a great event for anyone in the Information Technology field! There will be tons of companies present from all of the nation that would love to talk to you.",
+					"Tiger Hacks is a 36 hour hackathon in Columbia, MO. Hundreds of students will gather together and rethink journalism and media. This would be a great opportunity to meet companies and new friends!",
+					"Techweek in Kansas City will be a great way to gain a lot of knowledge about current tech and coorperate tech. This even has upwards of 35 speakers from major companies!"]
+		document.getElementById("desc1").innerHTML = desc[0];
+		document.getElementById("desc2").innerHTML = desc[1];
+		document.getElementById("desc3").innerHTML = desc[2];
 	</script>
   </body>
 </html>
