@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -94,6 +93,11 @@
           <p id = "desc3" ></p>
           <p><a class="btn btn-default" href="http://techweek.com/kansas-city/" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        <div class="form-wrap">
+          <form>
+                <input id="formbtn" value="Printer Friendly Page" role="button" onClick="printpage()">
+          </form>
+        </div>
      </div><!-- /.row -->
 
 
@@ -151,5 +155,20 @@
 		document.getElementById("desc2").innerHTML = desc[1];
 		document.getElementById("desc3").innerHTML = desc[2];
 	</script>
+
+   <!-- While loop for creating a printer friendly page using data arrays above -->
+  <script type='text/javascript'>
+    function printpage(){
+      var newopen = window.open("");
+      var count = 0;
+      var i = 0;
+      while (count < 3) {
+        newopen.document.write("<p>" + names[i] + "<br>" + dates[i] + "<br>" + desc[i] + "</p>");
+        i++;
+        count++;
+      }
+      newopen.document.writeln("<p>Enjoy!</p>");
+    }
+  </script>
   </body>
 </html>
