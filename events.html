@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -12,18 +12,21 @@
     <title>C.I.S. - Computer Information Systems</title>
 
 <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="ie-emulation-modes-warning.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
 
 <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
-	<script src = "modernizr.custom.05819.js"></script>
+    <link href="css/carousel.css" rel="stylesheet">
+	<script src = "js/modernizr.custom.05819.js"></script>
+
+<!-- Link to cis.js -->
+      <script type="text/javascript" src="js/cis.js"></script>
   </head>
 <!-- Nav Bar -->
   <body>
@@ -59,7 +62,7 @@
 			<div class="item active">
 				<div class="container">
 					<div class="carousel-caption">
-						<img class="img" src="cis.png" alt="" width="150" height="150">
+						<img class="img" src="images/cis.png" alt="" width="150" height="150">
 						<h1>Getting Involved</h1>
 						<p>Getting involved in local events can be a great way to network and make friends! Not only that but it is a great way to learn new things and get involved in the community. GeekWire is a great source to stay up to date on events and stay involved!</p>
 						<p><a class="btn btn-lg btn-primary" href="https://www.geekwire.com/calendar/" role="button">Check out GeekWire!</a></p>
@@ -106,9 +109,45 @@
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2017 Kyle Turner &middot;</p>
       </footer>
-
+       
     </div><!-- /.container -->
 
+
+      <script>
+          // Array to hold images
+          var images = ["images/tio.png", "images/thb.png", "images/twl.png"]
+          var filename1, filename2, filename3;
+          var currentFig1, currentFig2, currentFig3;
+          filename1 = images[0];
+          currentFig1 = document.getElementsByTagName("img")[1];
+          currentFig1.src = filename1;
+          filename2 = images[1];
+          currentFig2 = document.getElementsByTagName("img")[2];
+          currentFig2.src = filename2;
+          filename3 = images[2];
+          currentFig3 = document.getElementsByTagName("img")[3];
+          currentFig3.src = filename3;
+
+          // Arrry to hold Item Names
+          var names = ["Tech It Out Expo", "Tiger Hacks", "Techweek Kansas City"]
+          document.getElementById("item1").innerHTML = names[0];
+          document.getElementById("item2").innerHTML = names[1];
+          document.getElementById("item3").innerHTML = names[2];
+
+          // Array to hold event dates
+          var dates = ["October 26, 2017", "October 13-15, 2017", "September 11-15, 2017"]
+          document.getElementById("date1").innerHTML = dates[0];
+          document.getElementById("date2").innerHTML = dates[1];
+          document.getElementById("date3").innerHTML = dates[2];
+
+          // Array to hold description 
+          var desc = ["Tech IT Out would be a great event for anyone in the Information Technology field! There will be tons of companies present from all of the nation that would love to talk to you.",
+                      "Tiger Hacks is a 36 hour hackathon in Columbia, MO. Hundreds of students will gather together and rethink journalism and media. This would be a great opportunity to meet companies and new friends!",
+                      "Techweek in Kansas City will be a great way to gain a lot of knowledge about current tech and coorperate tech. This even has upwards of 35 speakers from major companies!"]
+          document.getElementById("desc1").innerHTML = desc[0];
+          document.getElementById("desc2").innerHTML = desc[1];
+          document.getElementById("desc3").innerHTML = desc[2];
+      </script>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -120,55 +159,6 @@
     <script src="holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
-	<script>
-		// Array to hold images
-		var images = ["tio.png", "thb.png", "twl.png"]
-		var filename1, filename2, filename3;
-		var currentFig1, currentFig2, currentFig3;
-		filename1 = images[0];
-		currentFig1 = document.getElementsByTagName("img")[1];
-		currentFig1.src = filename1;
-		filename2 = images[1];
-		currentFig2 = document.getElementsByTagName("img")[2];
-		currentFig2.src = filename2;
-		filename3 = images[2];
-		currentFig3 = document.getElementsByTagName("img")[3];
-		currentFig3.src = filename3;		
 
-		// Arrry to hold Item Names
-		var names = ["Tech It Out Expo", "Tiger Hacks", "Techweek Kansas City"]
-		document.getElementById("item1").innerHTML = names[0];
-		document.getElementById("item2").innerHTML = names[1];
-		document.getElementById("item3").innerHTML = names[2];
-		
-		// Array to hold event dates
-		var dates = ["October 26, 2017", "October 13-15, 2017", "September 11-15, 2017"]
-		document.getElementById("date1").innerHTML = dates[0];
-		document.getElementById("date2").innerHTML = dates[1];
-		document.getElementById("date3").innerHTML = dates[2];
-		
-		// Array to hold description 
-		var desc = ["Tech IT Out would be a great event for anyone in the Information Technology field! There will be tons of companies present from all of the nation that would love to talk to you.",
-					"Tiger Hacks is a 36 hour hackathon in Columbia, MO. Hundreds of students will gather together and rethink journalism and media. This would be a great opportunity to meet companies and new friends!",
-					"Techweek in Kansas City will be a great way to gain a lot of knowledge about current tech and coorperate tech. This even has upwards of 35 speakers from major companies!"]
-		document.getElementById("desc1").innerHTML = desc[0];
-		document.getElementById("desc2").innerHTML = desc[1];
-		document.getElementById("desc3").innerHTML = desc[2];
-	</script>
-
-   <!-- While loop for creating a printer friendly page using data arrays above -->
-  	<script type='text/javascript'>
-	    function printpage(){
-	      var newopen = window.open("");
-	      var count = 0;
-	      var i = 0;
-	      while (count < 3) {
-	        newopen.document.write("<p>" + names[i] + "<br>" + dates[i] + "<br>" + desc[i] + "</p>");
-	        i++;
-	        count++;
-	      }
-	      newopen.document.writeln("<p>Enjoy!</p>");
-	    }
-  	</script>
   </body>
 </html>
