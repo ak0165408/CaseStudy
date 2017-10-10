@@ -111,6 +111,36 @@ body {
   border: 1px solid lightgrey;
 }
 
+/* SUB FORM
+------------------------ */
+#subs {
+  display: none;
+  margin: 2em auto;
+  width: 50%;
+}
+.name legend, .contactinfo legend, .email legend, .phone legend, .address > legend {
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+}
+#fnameinput, #lnameinput {
+  margin: 1em 0 1em 0;
+}
+#state-pick {
+  margin-left: .5em;
+  height: 1.7em;
+}
+.button {
+  text-align: center;
+  margin-top:1em;
+}
+#submit {
+  height: 3.5em;
+  width: 9.5em;
+  border-radius: 10px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
